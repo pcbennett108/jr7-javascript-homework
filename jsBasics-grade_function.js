@@ -1,5 +1,9 @@
 function grade(score) {
-  if (score <= 100 && score >= 97) {
+  var inNum = typeof score;
+  if (inNum != "number") {
+    // works for all Types EXCEPT Undefined. How to fix?
+    console.log("Please enter a number between 0 and 100");
+  } else if (score <= 100 && score >= 97) {
     console.log("Your grade is.... A+");
   } else if (score <= 96 && score >= 93) {
     console.log("Your grade is.... A");
@@ -21,13 +25,12 @@ function grade(score) {
     console.log("Your grade is.... D+");
   } else if (score <= 66 && score >= 65) {
     console.log("Your grade is.... D");
-  } else if (score < 65) {
+  } else if (score < 65 && score >= 0) {
     console.log("Your grade is.... F");
   } else {
     console.log("please enter a valid score.");
   }
+  console.log(inNum); // this line is for troubleshooting only.
 }
-/*if (typeof score === "string") {
-    console.log("Please enter a number between 0 and 100");
-  }*/
-grade(234);
+
+grade(88);
