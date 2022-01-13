@@ -33,4 +33,8 @@ function grade(score) {
   console.log(inNum); // this line is for troubleshooting only.
 }
 
+grade("wut");
+grade(123);
 grade(88);
+grade();
+//grade(qwe);
