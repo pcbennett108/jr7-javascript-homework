@@ -18,3 +18,17 @@ for (i = 0; i < string1.length; i++) {
     console.log("Found an A!");
   }
 }
+//
+//In this class exercise we are going to print if a number stored in an array is odd or even.
+//1. Create an array with 10 random numbers.
+//2. Loop through the array
+//3. If the number at the current index is even, print out even, otherwise print odd
+//
+let randArray = [3, 42, 108, 99, 45, 86, 11, 38, 88, 13];
+for (i = 0; i < randArray.length; i++) {
+  if (randArray[i] % 2 == 0) {
+    console.log(randArray[i] + " is Even");
+  } else {
+    console.log(randArray[i] + " is Odd");
+  }
+}
