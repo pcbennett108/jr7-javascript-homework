@@ -24,7 +24,7 @@ console.log(divider);
 //
 //c. Print the title of all items with more than one image link.
 let imgItem = "";
-let imgCount = 0;
+//let imgCount = 0;
 for (let i = 0; i < data.items.length; i++) {
   let shortProd = data.items[i].product;
   if (shortProd.images.length > 1) {
